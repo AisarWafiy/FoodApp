@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, FlatList } from "react-native";
+// import { YELP_API_KEY } from "@env";
 
 const ResultsList = (props) => {
   const { title, results } = props;
 
   const [term, setTerm] = useState("");
+  console.log(process.env.YELP_API_KEY, "test");
 
   return (
     <View>

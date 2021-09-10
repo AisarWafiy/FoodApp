@@ -6,10 +6,8 @@ const urlProxy =
 export default axios.create({
   baseURL: "https://api.yelp.com/v3/businesses",
   //   baseURL: urlProxy,
-
   headers: {
-    Authorization:
-      "Bearer GSDy0CiaCFfiEUIGti7UE4QC6vXL7-ZgjZU_1FR7xXXPFWBW6XxL4QbcRu0d81Mv8Oqc2hz6yzVC16I1TVQy1msYLPmt9lhVYjbAnZj0X8vWZ1c_H-nr05RxijA4YXYx",
+    Authorization: `Bearer ${process.env.YELP_API_KEY}`,
     // "Access-Control-Allow-Origin": "*",
     // accept: "application/json",
     // "Access-Control-Allow-Origin": "*",
